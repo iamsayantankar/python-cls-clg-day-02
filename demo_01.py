@@ -10,5 +10,13 @@ for i in range(n):
 j = 1
 n = int(input("Enter the range: "))
 for i in range(1, n+1):
-    j = j*i
+    j *= i
+print(j)
+
+
+# Q3. Write a program to find the Fibonacci series. The range must be given by the user.
+j = 0
+n = int(input("Enter the range: "))
+for i in range(1, n+1):
+    j += i
 print(j)
