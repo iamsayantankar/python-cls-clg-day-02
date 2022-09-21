@@ -25,15 +25,28 @@
 #         j, k = k, j
 #         k = k + j
 #         print(k)
+#
+# # Q5. Write a Python program to get the largest number from a list.
+# n = int(input("Enter the range: "))
+# a = []
+# for i in range(0, n):
+#     b = int(input("Enter the number: "))
+#     a.append(b)
+# a.sort()
+# c = len(a)
+# print("(Type 01) The largest number is: ", a[c-1])
+#
+# print("(Type 02) The largest number is: ", max(a))
 
-# Q5. Write a Python program to get the largest number from a list.
+
+# Q6. Write a Python program to remove duplicates from a list
 n = int(input("Enter the range: "))
 a = []
+b = []
 for i in range(0, n):
-    b = int(input("Enter the number: "))
-    a.append(b)
-a.sort()
-c = len(a)
-print("(Type 01) The largest number is: ", a[c-1])
-
-print("(Type 02) The largest number is: ", max(a))
+    c = int(input("Enter the number: "))
+    a.append(c)
+for i in a:
+    if i not in b:
+        b.append(i)
+print(b)
