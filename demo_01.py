@@ -37,16 +37,31 @@
 # print("(Type 01) The largest number is: ", a[c-1])
 #
 # print("(Type 02) The largest number is: ", max(a))
+#
+#
+# # Q6. Write a Python program to remove duplicates from a list
+# n = int(input("Enter the range: "))
+# a = []
+# b = []
+# for i in range(0, n):
+#     c = int(input("Enter the number: "))
+#     a.append(c)
+# for i in a:
+#     if i not in b:
+#         b.append(i)
+# print(b)
 
 
-# Q6. Write a Python program to remove duplicates from a list
-n = int(input("Enter the range: "))
+# Q7. Write a Python program to find the list of words that are longer than n from a given list of words
+n = int(input("Enter the range of list: "))
+m = int(input("Enter the range of string: "))
 a = []
 b = []
 for i in range(0, n):
-    c = int(input("Enter the number: "))
+    c = input("Enter the number: ")
     a.append(c)
+print("Previous list is: ", a)
 for i in a:
-    if i not in b:
+    if len(i) <= m:
         b.append(i)
-print(b)
+print("New list is: ", b)
